@@ -1,459 +1,208 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رزومه حرفه‌ای</title>
-  <style>
-    :root {
-      --bg1: #0f172a;
-      --bg2: #111827;
-      --card: rgba(255, 255, 255, 0.08);
-      --card-border: rgba(255, 255, 255, 0.14);
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --accent2: #818cf8;
-      --chip: rgba(56, 189, 248, 0.12);
-      --chip-border: rgba(56, 189, 248, 0.25);
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali | Backend Developer</title>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <style>
 
-    body {
-      min-height: 100vh;
-      font-family: Tahoma, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 30%),
-        radial-gradient(circle at bottom left, rgba(129, 140, 248, 0.18), transparent 28%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      color: var(--text);
-      padding: 28px;
-      line-height: 1.9;
-    }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-    .resume {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: var(--card);
-      border: 1px solid var(--card-border);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
 
-    .hero {
-      position: relative;
-      padding: 38px 32px;
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(129, 140, 248, 0.18));
-      border-bottom: 1px solid var(--card-border);
-      display: flex;
-      gap: 24px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+        header{
+            background:#1e293b;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.06), transparent);
-      pointer-events: none;
-    }
+        header h1{
+            font-size:42px;
+        }
 
-    .avatar {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: white;
-      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
-      border: 3px solid rgba(255, 255, 255, 0.22);
-      flex-shrink: 0;
-    }
+        header p{
+            margin-top:10px;
+            font-size:20px;
+            color:#cbd5e1;
+        }
 
-    .hero-info {
-      position: relative;
-      z-index: 1;
-      flex: 1;
-      min-width: 260px;
-    }
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:40px 0;
+        }
 
-    .hero-info h1 {
-      font-size: 2.2rem;
-      margin-bottom: 6px;
-    }
+        section{
+            background:white;
+            margin-bottom:25px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+        }
 
-    .hero-info .role {
-      color: #cbd5e1;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
+        h2{
+            margin-bottom:20px;
+            color:#0f172a;
+        }
 
-    .hero-info .summary {
-      color: #dbeafe;
-      max-width: 700px;
-      font-size: 0.98rem;
-    }
+        ul{
+            padding-left:20px;
+        }
 
-    .top-links {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+        li{
+            margin-bottom:8px;
+        }
 
-    .link-chip {
-      text-decoration: none;
-      color: var(--text);
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-      transition: 0.25s ease;
-    }
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
 
-    .link-chip:hover {
-      transform: translateY(-2px);
-      border-color: rgba(56, 189, 248, 0.5);
-      background: rgba(56, 189, 248, 0.12);
-    }
+        .card{
+            border:1px solid #ddd;
+            padding:20px;
+            border-radius:10px;
+        }
 
-    .content {
-      display: grid;
-      grid-template-columns: 1.05fr 1.95fr;
-    }
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            border-radius:6px;
+        }
 
-    .sidebar,
-    .main {
-      padding: 30px;
-    }
+        footer{
+            text-align:center;
+            padding:25px;
+            color:#666;
+        }
 
-    .sidebar {
-      border-left: 1px solid var(--card-border);
-      background: rgba(255, 255, 255, 0.03);
-    }
+    </style>
 
-    .section {
-      margin-bottom: 28px;
-    }
-
-    .section-title {
-      font-size: 1.05rem;
-      margin-bottom: 14px;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .section-title::after {
-      content: "";
-      height: 1px;
-      flex: 1;
-      background: linear-gradient(to left, rgba(255,255,255,0.22), transparent);
-    }
-
-    .info-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .info-item {
-      padding: 12px 14px;
-      border-radius: 16px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #e2e8f0;
-      font-size: 0.95rem;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .chip {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--chip);
-      border: 1px solid var(--chip-border);
-      color: #dff5ff;
-      font-size: 0.9rem;
-    }
-
-    .timeline {
-      position: relative;
-      padding-right: 18px;
-      display: grid;
-      gap: 18px;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      top: 6px;
-      bottom: 6px;
-      right: 6px;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-      opacity: 0.65;
-    }
-
-    .card {
-      position: relative;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 18px;
-      padding: 18px 18px 18px 16px;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      right: -21px;
-      top: 22px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.12);
-    }
-
-    .card h3 {
-      font-size: 1.05rem;
-      margin-bottom: 4px;
-      color: #ffffff;
-    }
-
-    .meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #dbeafe;
-      font-size: 0.95rem;
-    }
-
-    .project-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .project-list li {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 14px 16px;
-      color: #e2e8f0;
-    }
-
-    .skill-meter {
-      margin-bottom: 14px;
-    }
-
-    .skill-meter .label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.92rem;
-      color: #e2e8f0;
-      margin-bottom: 6px;
-    }
-
-    .bar {
-      height: 9px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 999px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .bar span {
-      display: block;
-      height: 100%;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-    }
-
-    .footer {
-      padding: 18px 30px;
-      border-top: 1px solid var(--card-border);
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.9rem;
-      background: rgba(255,255,255,0.03);
-    }
-
-    @media (max-width: 860px) {
-      .content {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        border-left: none;
-        border-top: 1px solid var(--card-border);
-      }
-
-      .hero {
-        text-align: center;
-        justify-content: center;
-      }
-
-      .top-links {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 520px) {
-      body {
-        padding: 10px;
-      }
-
-      .sidebar, .main, .hero {
-        padding: 22px 18px;
-      }
-
-      .hero-info h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="resume">
-    <header class="hero">
-      <div class="avatar">A</div>
-      <div class="hero-info">
-        <h1>نام و نام خانوادگی</h1>
-        <div class="role">توسعه‌دهنده وب | UI Designer</div>
-        <div class="summary">
-          توسعه‌دهنده‌ای علاقه‌مند به طراحی رابط‌های کاربری مدرن، ساخت صفحات سریع و واکنش‌گرا، و خلق تجربه‌ای ساده و حرفه‌ای برای کاربر.
-        </div>
-      </div>
-      <div class="top-links">
-        <a class="link-chip" href="#">ایمیل</a>
-        <a class="link-chip" href="#">گیت‌هاب</a>
-        <a class="link-chip" href="#">لینکدین</a>
-      </div>
-    </header>
 
-    <div class="content">
-      <aside class="sidebar">
-        <section class="section">
-          <h2 class="section-title">اطلاعات تماس</h2>
-          <div class="info-list">
-            <div class="info-item">📍 تهران، ایران</div>
-            <div class="info-item">📧 your@email.com</div>
-            <div class="info-item">📞 0912xxxxxxx</div>
-            <div class="info-item">🔗 github.com/username</div>
-          </div>
-        </section>
+<header>
 
-        <section class="section">
-          <h2 class="section-title">مهارت‌ها</h2>
-          <div class="chips">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">React</span>
-            <span class="chip">Git</span>
-            <span class="chip">Figma</span>
-          </div>
-        </section>
+    <h1>Ali</h1>
 
-        <section class="section">
-          <h2 class="section-title">سطح مهارت</h2>
-          <div class="skill-meter">
-            <div class="label"><span>HTML / CSS</span><span>95%</span></div>
-            <div class="bar"><span style="width:95%"></span></div>
-          </div>
-          <div class="skill-meter">
-            <div class="label"><span>JavaScript</span><span>82%</span></div>
-            <div class="bar"><span style="width:82%"></span></div>
-          </div>
-          <div class="skill-meter">
-            <div class="label"><span>React</span><span>72%</span></div>
-            <div class="bar"><span style="width:72%"></span></div>
-          </div>
-        </section>
+    <p>Backend Developer | Python | Django | PHP</p>
 
-        <section class="section">
-          <h2 class="section-title">زبان‌ها</h2>
-          <div class="info-list">
-            <div class="info-item">فارسی: Native</div>
-            <div class="info-item">انگلیسی: Intermediate</div>
-          </div>
-        </section>
-      </aside>
+</header>
 
-      <main class="main">
-        <section class="section">
-          <h2 class="section-title">درباره من</h2>
-          <div class="card">
-            <p>
-              متخصص طراحی و توسعه وب با تمرکز بر رابط‌های کاربری مینیمال، تجربه کاربری روان و کدنویسی تمیز.
-              علاقه‌مند به ساخت محصولاتی هستم که هم زیبا باشند و هم سریع و کاربردی.
-            </p>
-          </div>
-        </section>
+<div class="container">
 
-        <section class="section">
-          <h2 class="section-title">سوابق کاری</h2>
-          <div class="timeline">
-            <div class="card">
-              <h3>توسعه‌دهنده وب Front-End</h3>
-              <div class="meta">نام شرکت | 1402 - 1404</div>
-              <p>طراحی و پیاده‌سازی صفحات واکنش‌گرا، بهینه‌سازی تجربه کاربری و همکاری با تیم طراحی برای ساخت رابط‌های مدرن.</p>
-            </div>
-            <div class="card">
-              <h3>طراح رابط کاربری</h3>
-              <div class="meta">نام شرکت | 1400 - 1402</div>
-              <p>طراحی صفحات فرود، سیستم‌های بصری و بهبود ساختار رابط برای افزایش جذابیت و وضوح تجربه کاربر.</p>
-            </div>
-          </div>
-        </section>
+<section>
 
-        <section class="section">
-          <h2 class="section-title">تحصیلات</h2>
-          <div class="card">
-            <h3>کارشناسی مهندسی کامپیوتر</h3>
-            <div class="meta">دانشگاه نمونه | 1398 - 1402</div>
-            <p>تمرکز بر برنامه‌نویسی وب، طراحی سیستم و پروژه‌های کاربردی مرتبط با توسعه نرم‌افزار.</p>
-          </div>
-        </section>
+<h2>About Me</h2>
 
-        <section class="section">
-          <h2 class="section-title">پروژه‌ها</h2>
-          <ul class="project-list">
-            <li>طراحی فروشگاه اینترنتی با UI مدرن و واکنش‌گرا</li>
-            <li>ساخت پنل مدیریت با React و داشبورد تحلیلی</li>
-            <li>پیاده‌سازی صفحه معرفی خدمات برای کسب‌وکارها</li>
-          </ul>
-        </section>
-      </main>
-    </div>
+<p>
+I am a Software Engineering student passionate about Backend Development.
+I enjoy building web applications using Python, Django and PHP and I am constantly learning new technologies.
+</p>
 
-    <footer class="footer">
-      آخرین به‌روزرسانی رزومه: 1404
-    </footer>
-  </div>
+</section>
+
+<section>
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>Python</li>
+<li>Django</li>
+<li>PHP</li>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>Git & GitHub</li>
+<li>REST API</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>Library Management</h3>
+
+<p>Backend project built with Django.</p>
+
+<a href="#" class="btn">GitHub</a>
+
+</div>
+
+<div class="card">
+
+<h3>E-Commerce</h3>
+
+<p>Online Shop built with PHP.</p>
+
+<a href="#" class="btn">GitHub</a>
+
+</div>
+
+<div class="card">
+
+<h3>Blog API</h3>
+
+<p>REST API using Django REST Framework.</p>
+
+<a href="#" class="btn">GitHub</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<p>
+B.Sc. Software Engineering
+</p>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<p>Email : your@email.com</p>
+
+<p>GitHub : github.com/username</p>
+
+</section>
+
+</div>
+
+<footer>
+
+© 2026 Ali
+
+</footer>
+
 </body>
 </html>
