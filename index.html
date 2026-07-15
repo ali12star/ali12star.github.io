@@ -1,80 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ali | Backend Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff}
-.container{width:min(1100px,92%);margin:auto}
-header{padding:90px 0;text-align:center}
-h1{font-size:56px}
-.tag{display:inline-block;background:#2563eb;padding:8px 18px;border-radius:999px;margin:15px 0}
-p{line-height:1.7;color:#dbeafe}
-.btns{margin-top:25px}
-.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:10px;margin:6px;background:#3b82f6;color:#fff;font-weight:600}
-.btn.out{background:transparent;border:1px solid #60a5fa}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:25px 0 45px}
-.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);padding:22px;border-radius:18px;border:1px solid rgba(255,255,255,.15);transition:.3s}
-.card:hover{transform:translateY(-6px)}
-h2{text-align:center;margin:45px 0 20px;font-size:34px}
-ul{padding-left:18px}
-li{margin:8px 0}
-footer{text-align:center;padding:35px;color:#cbd5e1}
-</style>
-</head>
-<body>
 
-<header class="container">
-<h1>👋 Hi, I'm Ali</h1>
-<div class="tag">Junior Backend Developer</div>
-<p>Python • Django • PHP • HTML • CSS • Linux</p>
-<div class="btns">
-<a class="btn" href="https://github.com/YOUR_USERNAME">GitHub</a>
-<a class="btn out" href="#">Download CV</a>
-</div>
-</header>
+    <style>
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<section class="container">
-<h2>About Me</h2>
-<div class="card">
-<p>I am a Software Engineering student passionate about backend development. I enjoy building web applications with Python, Django and PHP. I previously worked as a Technical Website Support Specialist, gaining practical experience with WordPress, hosting, troubleshooting and client support.</p>
-</div>
+html{
+    scroll-behavior:smooth;
+}
 
-<h2>Skills</h2>
-<div class="grid">
-<div class="card"><h3>💻 Backend</h3><ul><li>Python</li><li>Django (Basic)</li><li>PHP</li><li>REST API (Basic)</li></ul></div>
-<div class="card"><h3>🗄 Database</h3><ul><li>SQLite</li><li>SQL Server</li></ul></div>
-<div class="card"><h3>🛠 Tools</h3><ul><li>Git & GitHub</li><li>Linux</li><li>VS Code</li><li>Figma</li><li>WordPress</li></ul></div>
-<div class="card"><h3>🎨 Frontend</h3><ul><li>HTML5</li><li>CSS3</li></ul></div>
-</div>
+body{
+    font-family:Tahoma, Arial, sans-serif;
+    background:linear-gradient(135deg,#08111f,#123d8f);
+    color:#fff;
+    min-height:100vh;
+}
 
-<h2>Experience</h2>
-<div class="card">
-<h3>Technical Website Support</h3>
-<p>• Website troubleshooting<br>• WordPress management<br>• Hosting & cPanel<br>• Customer support<br>• Website maintenance</p>
-</div>
+.wrap{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
 
-<h2>Projects</h2>
-<div class="grid">
-<div class="card"><h3>📚 Library Management</h3><p>Django Backend Project</p></div>
-<div class="card"><h3>🛒 E-Commerce</h3><p>PHP & MySQL</p></div>
-<div class="card"><h3>📰 Blog API</h3><p>Django REST Framework</p></div>
-</div>
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
 
-<h2>Education</h2>
-<div class="card"><p><strong>B.Sc. Software Engineering</strong><br>Currently studying.</p></div>
+.hero h1{
+    font-size:54px;
+    margin-bottom:15px;
+}
 
-<h2>Contact</h2>
-<div class="card">
-<p>📧 your@email.com<br>
-💻 github.com/YOUR_USERNAME<br>
-🌍 Available for Internship</p>
-</div>
+.badge{
+    display:inline-block;
+    padding:10px 22px;
+    background:#2563eb;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+p{
+    line-height:2;
+    color:#dbeafe;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    margin:8px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#3b82f6;
+}
+
+.out{
+    background:transparent;
+    border:1px solid #60a5fa;
+}
+
+.out:hover{
+    background:#2563eb;
+}
+
+.sec{
+    margin:40px 0;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+ul{
+    padding-right:20px;
+}
+
+li{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#cbd5e1;
+}
+    </style></head><body>
+<div class="wrap">
+<section class="hero">
+<h1>Ali kadivar</h1>
+<div >توسعه دهنده وب سایت</div>
+<br>
+<!-- <p>Python • Django • PHP • HTML • CSS • Linux</p> -->
+<a class="btn" href="https://github.com/ali12star">GitHub</a>
+<a class="btn out" href="https://www.linkedin.com/in/ali-kadivar-51047638a">Linkedin</a>
 </section>
 
-<footer>© 2026 Ali • Backend Developer</footer>
-</body>
-</html>
+<section class="sec"><div class="card"><h2>درباره من</h2>
+با سلام 
+در حال حاضر دانشجوی مهندسی نرم‌افزار دانشکده منتظری هستم و به توسعه Backend علاقه زیادی دارم. با Python، Django  و  WordPress , PHP پروژه‌های آموزشی و شخصی انجام داده‌ام و همواره در حال یادگیری فناوری‌های جدید هستم. همچنین سابقه کار به عنوان پشتیبان فنی سایت را دارم و با  هاست و رفع مشکلات فنی وب‌سایت‌ها آشنا هستم.
+</div></section>
+
+<section class="sec"><h2>مهارت‌ها</h2>
+<div class="grid">
+<div class="card"><h3>Backend</h3>
+    <br><br><ul><li>Python</li><br><li>Django (Basic)</li></ul></div>
+<div class="card"><h3>Frontend</h3><br><br><ul><li>HTML5</li><br><li>CSS3</li></ul></div>
+<div class="card"><h3>Database</h3><br><br><ul><li>SQLite</li><br><li>SQL Server</li></ul></div>
+<div class="card"><h3>ابزارها</h3><ul><li>WordPress</li><li>GitHub</li><li>Linux</li><li>VS Code</li><li>Figma</li></ul></div>
+</div></section>
+
+<section class="sec"><div class="card"><h2>سوابق کاری</h2>
+<h3>پشتیبان فنی سایت</h3>
+<ul><li>رفع مشکلات فنی وب‌سایت</li><li>مدیریت WordPress</li><li>کار با هاست و کنترل پنل</li><li>پشتیبانی کاربران</li></ul></div></section>
+
+<section class="sec"><h2>پروژه‌ها</h2><div class="grid">
+<div class="card"><h3><a href="https://electobka.ir/">E-commerce</a></h3><p>فروشگاه قطعات الکترونیکی wordpress</p></div>
+<div class="card"><a href="https://github.com/ali12star/django-library-management"><h3>📚 Library Management</h3><p>پروژه مدیریت کتابخانه با Django</p></a></div>
+<div class="card"><h3><a href="https://github.com/ali12star/Car_system_management">car management</a></h3><p>سیستم مدیریت خودرو PHP</p></div>
+</div></section>
+
+<section class="sec"><div class="card"><h2>تحصیلات</h2><p>دانشجوی مهندسی نرم‌افزار منتظری</p></div></section>
+<section class="sec"><div class="card"><h2>راه‌های ارتباطی</h2><p>📧 alikadivar12@gmail.com<br>💻 github.com/ali12star<br>📍 آماده همکاری به عنوان کارآموز Backend</p></div></section>
+<footer>© 2026 Ali Kadivar</footer></div></body></html>
