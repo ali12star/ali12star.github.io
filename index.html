@@ -1,114 +1,80 @@
-<section id="about">
-    <h2>About Me</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali | Backend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff}
+.container{width:min(1100px,92%);margin:auto}
+header{padding:90px 0;text-align:center}
+h1{font-size:56px}
+.tag{display:inline-block;background:#2563eb;padding:8px 18px;border-radius:999px;margin:15px 0}
+p{line-height:1.7;color:#dbeafe}
+.btns{margin-top:25px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:10px;margin:6px;background:#3b82f6;color:#fff;font-weight:600}
+.btn.out{background:transparent;border:1px solid #60a5fa}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:25px 0 45px}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);padding:22px;border-radius:18px;border:1px solid rgba(255,255,255,.15);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+h2{text-align:center;margin:45px 0 20px;font-size:34px}
+ul{padding-left:18px}
+li{margin:8px 0}
+footer{text-align:center;padding:35px;color:#cbd5e1}
+</style>
+</head>
+<body>
 
-    <p>
-        I am a Software Engineering student with a strong interest in Backend Development.
-        I enjoy building web applications using Python, Django, and PHP while continuously
-        improving my programming skills through academic and personal projects.
-    </p>
+<header class="container">
+<h1>👋 Hi, I'm Ali</h1>
+<div class="tag">Junior Backend Developer</div>
+<p>Python • Django • PHP • HTML • CSS • Linux</p>
+<div class="btns">
+<a class="btn" href="https://github.com/YOUR_USERNAME">GitHub</a>
+<a class="btn out" href="#">Download CV</a>
+</div>
+</header>
 
-    <p>
-        I previously worked as a Technical Website Support Specialist, where I gained
-        hands-on experience in website maintenance, WordPress management, technical
-        troubleshooting, and customer support.
-    </p>
+<section class="container">
+<h2>About Me</h2>
+<div class="card">
+<p>I am a Software Engineering student passionate about backend development. I enjoy building web applications with Python, Django and PHP. I previously worked as a Technical Website Support Specialist, gaining practical experience with WordPress, hosting, troubleshooting and client support.</p>
+</div>
+
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>💻 Backend</h3><ul><li>Python</li><li>Django (Basic)</li><li>PHP</li><li>REST API (Basic)</li></ul></div>
+<div class="card"><h3>🗄 Database</h3><ul><li>SQLite</li><li>SQL Server</li></ul></div>
+<div class="card"><h3>🛠 Tools</h3><ul><li>Git & GitHub</li><li>Linux</li><li>VS Code</li><li>Figma</li><li>WordPress</li></ul></div>
+<div class="card"><h3>🎨 Frontend</h3><ul><li>HTML5</li><li>CSS3</li></ul></div>
+</div>
+
+<h2>Experience</h2>
+<div class="card">
+<h3>Technical Website Support</h3>
+<p>• Website troubleshooting<br>• WordPress management<br>• Hosting & cPanel<br>• Customer support<br>• Website maintenance</p>
+</div>
+
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>📚 Library Management</h3><p>Django Backend Project</p></div>
+<div class="card"><h3>🛒 E-Commerce</h3><p>PHP & MySQL</p></div>
+<div class="card"><h3>📰 Blog API</h3><p>Django REST Framework</p></div>
+</div>
+
+<h2>Education</h2>
+<div class="card"><p><strong>B.Sc. Software Engineering</strong><br>Currently studying.</p></div>
+
+<h2>Contact</h2>
+<div class="card">
+<p>📧 your@email.com<br>
+💻 github.com/YOUR_USERNAME<br>
+🌍 Available for Internship</p>
+</div>
 </section>
 
-<section id="skills">
-
-    <h2>Technical Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill-card">
-            <h3>Programming</h3>
-            <ul>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <ul>
-                <li>Django</li>
-                <li>Django REST Framework (Basic)</li>
-                <li>REST API (Basic)</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Database</h3>
-            <ul>
-                <li>SQLite</li>
-                <li>Microsoft SQL Server</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Linux</li>
-                <li>VS Code</li>
-                <li>Figma</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>CMS</h3>
-            <ul>
-                <li>WordPress</li>
-            </ul>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="experience">
-
-    <h2>Work Experience</h2>
-
-    <div class="card">
-
-        <h3>Technical Website Support</h3>
-
-        <p>
-            • Provided technical support for websites and clients.<br>
-            • Managed WordPress websites and content updates.<br>
-            • Performed website maintenance and troubleshooting.<br>
-            • Worked with hosting environments and control panels.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="education">
-
-    <h2>Education</h2>
-
-    <div class="card">
-
-        <h3>B.Sc. Software Engineering</h3>
-
-        <p>Currently studying Software Engineering.</p>
-
-    </div>
-
-</section>
-
-<section id="languages">
-
-    <h2>Languages</h2>
-
-    <ul>
-        <li>Persian — Native</li>
-        <li>English — Intermediate</li>
-    </ul>
-
-</section>
+<footer>© 2026 Ali • Backend Developer</footer>
+</body>
+</html>
